@@ -1,0 +1,4 @@
+<ion-tabs delegate-handle="{{tabname}}" class="tabs-striped tabs-vertical overflow-y-auto {{class}}">
+    <ion-tab ng-if="!icon" ng-repeat="tab in tabs" title={{::tab}} class="{{ disableFuture && $index > maxIndex ? 'stable-bg dark disabled-tab' : 'positive-bg light' }}" on-select="onTabSelected({index: $index})" disabled="disableFuture && $index > maxIndex"></ion-tab>
+    <ion-tab ng-if="icon" ng-repeat="(key, value) in tabs" title={{::value.text}} icon="ion-{{::value.icon}} icon-style" class="{{ value.disable ? 'stable-bg dark disabled-tab' : 'positive-bg light' }}" on-select="onTabSelected({index: $index, value: value})" disabled="value.disable"></ion-tab>
+</ion-tabs>

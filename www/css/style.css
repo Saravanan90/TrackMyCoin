@@ -1,0 +1,268 @@
+/* Empty. Add your own CSS if you like */
+html, body{
+	width: 100%;
+	height: 100%;
+}
+.app-bg{
+	background-color: rgb(218, 165, 32);
+}
+.margin-right{
+	margin-right: 10px;
+}
+.font-white{
+	color: white;
+}
+.font-48{
+	font-size: 48px;
+}
+.inline-block{
+	display: inline-block;
+}
+.bg-inherit{
+	background-color: inherit;
+}
+.no-border{
+	border: none;
+}
+.err-txt{
+	width: 100%;
+	display: block;
+	text-align: left;
+	font-size: 12px;
+	padding-left: 10px;
+}
+.content-margin{
+    margin-top:  10%;
+}
+.content-padding{
+    padding: 5px;
+}
+.expense-list{
+	margin: 10px -5px 0;
+}
+.expense-list .item{
+	font-size: 15px;
+	padding: 10px 5px;
+	width: inherit;
+}
+.expense-list .col{
+	padding: 0;
+}
+.ion-font{
+	margin: 6px auto -7px !important;
+}
+.tab-day .icon-style{
+	font-size: 30px;
+	margin: -6px 0 !important;
+}
+.ion-day:before{
+	content: 'D';
+}
+.ion-week:before{
+	content: 'W';
+}
+.ion-month:before{
+	content: 'M';
+}
+.ion-year:before{
+	content: 'Y';
+}
+.ion-1:before{
+	content: '1';
+}
+.ion-2:before{
+	content: '2';
+}
+.ion-3:before{
+	content: '3';
+}
+.ion-4:before{
+	content: '4';
+}
+.ion-5:before{
+	content: '5';
+}
+.ion-6:before{
+	content: '6';
+}
+.ion-7:before{
+	content: '7';
+}
+.ion-8:before{
+	content: '8';
+}
+.ion-9:before{
+	content: '9';
+}
+.ion-10:before{
+	content: '10';
+}
+.ion-11:before{
+	content: '11';
+}
+.ion-12:before{
+	content: '12';
+}
+.ion-13:before{
+	content: '13';
+}
+.ion-14:before{
+	content: '14';
+}
+.ion-15:before{
+	content: '15';
+}
+.ion-16:before{
+	content: '16';
+}
+.ion-17:before{
+	content: '17';
+}
+.ion-18:before{
+	content: '18';
+}
+.ion-19:before{
+	content: '19';
+}
+.ion-20:before{
+	content: '20';
+}
+.ion-21:before{
+	content: '21';
+}
+.ion-22:before{
+	content: '22';
+}
+.ion-23:before{
+	content: '23';
+}
+.ion-24:before{
+	content: '24';
+}
+.ion-25:before{
+	content: '25';
+}
+.ion-26:before{
+	content: '26';
+}
+.ion-27:before{
+	content: '27';
+}
+.ion-28:before{
+	content: '28';
+}
+.ion-29:before{
+	content: '29';
+}
+.ion-30:before{
+	content: '30';
+}
+.ion-31:before{
+	content: '31';
+}
+
+label.item.has-error {
+  border-bottom: 2px solid red;
+}
+
+/*label.item.has-error-lr {
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+}
+
+label.item.valid-lr {
+  border-left: 2px solid green;
+  border-right: 2px solid green;
+}*/
+
+.form-msgs {
+	display: block;
+	position: relative;
+	z-index: 2;
+	text-align: left;
+	font-size: 13px;
+}
+.form-msg{
+	padding: 5px 0 5px 16px;
+	border-top: 2px solid;
+	display: block;
+}
+.err-emoticon{
+	font-size: 30px;
+}
+
+.tabs-vertical .tabs{
+	position: absolute !important;
+	top: 88px !important;
+	bottom: 49px !important;
+	height: inherit;
+	width: 45px !important;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: center;
+	padding-top: 0px;
+	overflow-y: auto;
+}
+.tabs-vertical .tab-item{
+	height: 49px;
+	overflow: visible;
+	width: 100%;
+}
+.tab-day .tab-item{
+	height: 60px;
+}
+.tab-day .tab-title{
+	font-size: 13px;
+}
+.has-vertical-tabs{
+	left: 45px !important;
+}
+.tabs-vertical .tab-item.tab-item-active{
+	border-width: 0 !important;
+	border-color: inherit;
+	margin-top: 0;
+}
+.disabled-tab .icon, .disabled-tab .tab-title{
+	opacity: 0.5;
+}
+.bar-subheader{
+	font-size: 17px;
+	font-weight: 500;
+}
+.bar-subheader .item{
+	font: inherit;
+}
+.no-padding{
+	padding: 0;
+}
+.no-border{
+	border: none;
+}
+.item-select select{
+	max-width: 90%;
+	font: inherit;
+	direction: ltr;
+}
+.page-err{
+	font-size: 16px;
+    line-height: 25px;
+}
+.page-err .msg{
+	opacity: 0.6
+}
+.page-err .icon{
+	font-size: 50px;
+	margin: 50px 0 -5px 0;
+	display: block;
+}
+.no-margin{
+	margin: 0 !important;
+}
+.expense-header{
+	margin: -10px -10px 10px -10px;
+    width: inherit;
+    font-size: 16px;
+}

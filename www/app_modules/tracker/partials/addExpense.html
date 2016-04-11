@@ -1,0 +1,40 @@
+<ion-modal-view ng-controller="AddExpenseController">
+	<ion-header-bar class="bar-positive">
+		<h1 class="title">Add Expense</h1>
+		<a class="button button-icon icon ion-close-round" ng-click="addExpenseModal.hide()"></a>
+	</ion-header-bar>
+	<form name="addExpenseForm" novalidate>
+		<ion-content class="has-footer">
+			<div class="list list-inset">
+				<label class="item item-input item-select">
+					<div class="input-label">
+						Category
+					</div>
+					<select ng-model="expense.category">
+						<option ng-repeat="category in categories" value={{category}}
+                        ng-selected={{category==expense.category}} >
+                        	{{category}}
+                    	</option>
+					</select>
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Expense</span>
+					<input type="number" required ng-model="expense.cost" class="text-right">
+				</label>
+				<label class="item item-input item-stacked-label">
+					<span class="input-label">Description</span>
+					<input type="text" required ng-model="expense.desc" />
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Date</span>
+					<input type="text" ng-disabled="true" required value="{{tracker.day}}/{{tracker.month + 1}}/{{tracker.year}}" class="text-right">
+				</label>
+			</div>
+		</ion-content>
+		<div class="bar bar-footer no-padding">
+			<button class="button button-full button-positive no-margin" ng-disabled="addExpenseForm.$invalid" ng-click="addExpense()">
+				<span class="title">Done</span>
+			</button>
+		</div>
+	</form>
+</ion-modal-view>

@@ -1,0 +1,10 @@
+<div class="list expense-list" ng-repeat="(key, values) in data">
+  <div class="item item-divider row">
+    <div class="col">{{key}}</div>
+    <div class="col text-right">{{amount[$index]}}</div>
+  </div>
+  <div class="item row" ng-repeat="obj in values">
+    <div class="col">{{obj.desc}}</div>
+    <div class="col text-right">{{obj.cost}}</div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<ion-view class="app-bg" cache-view="false" hide-back-button="true">
+	<ion-nav-buttons>
+		<app-logo></app-logo>
+	</ion-nav-buttons>
+	<ion-nav-title>
+		<span class="assertive">Track</span>
+		<span class="energized"> My</span>
+		<span class="balanced"> Coin</span>
+	</ion-nav-title>
+	<ion-content scroll="false" class="text-center content-margin">
+		<div ng-include="User.isNew ? '/app_modules/register/registerView.html' : '/app_modules/login/loginView.html'"></div>
+		<ion-toggle class="inline-block bg-inherit no-border" ng-model="User.isNew">
+	        New User?
+	    </ion-toggle>
+	</ion-content>
+</ion-view>

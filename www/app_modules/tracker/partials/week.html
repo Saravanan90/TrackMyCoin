@@ -1,0 +1,28 @@
+<ion-view hide-back-button="true">
+	<ion-nav-title>
+		Week Tracker
+	</ion-nav-title>
+	<date-nav tracker="tracker" max-month="{{::tracker.year == default.year && default.month}}" months="::months"></date-nav>
+	<vertical-tabs tabs="weeks" tabname="week-tabs" icon="true" selected-index="::tracker.week" on-tab-select="refreshWeek(index, value)"></vertical-tabs>
+	<ion-content class="has-vertical-tabs has-subheader padding has-tabs">
+		<div ng-if="!dataErr && chartData" class="has-subheader">
+			<div class="assertive-bg light row expense-header">
+				<div class="col">Total Expenses</div>
+				<div class="col text-right">{{total}}</div>
+			</div>
+			<expense-chart data="chartData" labels="chartLabels"></expense-chart>
+			<expense-list data="listdata" amount="chartData"><expense-list>
+		</div>
+		<div ng-if="dataErr" class="page-err">
+			<div class="text-center msg">
+				<i class="icon ion-sad-outline"></i><br />
+				<b>{{ 'OOPS' | translate }}</b><br/>
+				{{ dataErr | translate }}<br/>
+				{{ 'ADD_EXP' | translate }}
+			</div>
+			<button class="button button-block button-balanced" ng-click="addExpenseModal.show()">
+				Add Expense
+			</button>
+		</div>
+	</ion-content>
+</ion-view>

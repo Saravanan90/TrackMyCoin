@@ -1,0 +1,17 @@
+<div class="bar bar-balanced bar-subheader">
+	<div class="row text-center row-center no-padding" ng-if="!ismonth">
+		<div class="col-67">
+			<label class="item item-select item-balanced no-border">	
+			   <select ng-model="Date.month" ng-change="onMonthChange()">
+                    <option ng-repeat="month in months" value={{$index}}
+                        ng-selected={{$index==tracker.month}} ng-disabled="$index > maxMonth">
+                        {{month}}
+                    </option>
+                </select>
+			</label>
+		</div>
+		<div ng-if="date" class="col-10">{{tracker.day}},</div>
+		<div class="col col-20 text-left">{{::tracker.year}}</div>
+	</div>
+	<div class="text-center title" ng-if="ismonth">{{months[tracker.month]}}, {{::tracker.year}}</div>
+</div>
