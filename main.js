@@ -6,9 +6,10 @@ var express = require('express'),
 
 var	app = express();
 
-var db = require('./server/utils/dbUtil');
-db.connect('mongodb://localhost/trackmycoin');
+var db = require('./server/utils/dbUtil'),
+    dbUrl = process.env.DB_URL || 'mongodb://localhost/trackmycoin';
 
+db.connect(dbUrl);
 
 /*options = {
   configDir: './server/config',
